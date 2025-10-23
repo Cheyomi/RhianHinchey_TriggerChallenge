@@ -8,12 +8,12 @@ public class TriggerSetActive : MonoBehaviour
 { 
     public GameObject targetObject;
     
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider light)
     {
         targetObject.SetActive(false);
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider light)
     {
         targetObject.SetActive(true);
     }       
